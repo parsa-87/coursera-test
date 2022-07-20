@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+#normal {
+    overflow: auto;
+}
+h1 {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    clear: both;
+}
+p.text {
+    clear: right;
+}
+p.title {
+    float: right;
+    width: 33.33%;
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+    text-align: center;
+    font: bold 1em Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: blue;
+    background-size: cover;
+}
+section {
+    overflow: auto;
+    flex: 1;
+    background: red;
+    position: relative;
+    float: left;
+    border: 5px solid black;
+}
+@media (min-width: 992px) {
+    section {
+        margin: 1.66%;
+        width: 30%;
+    }
+    #normal {
+        display: flex;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    section {
+        width: 40%;
+        margin: 2% 5%;
+    }
+    section#third {
+        clear: left;
+        width: 90%;
+        margin: 2% 5%;
+    }
+}
+@media (max-width: 767px) {
+  section {
+    width: 80%;
+    margin: 2% 10%;
+  }
+}
